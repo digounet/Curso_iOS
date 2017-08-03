@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="avO-37-dw2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Moto-->
+        <scene sceneID="q4b-oy-Wzf">
+            <objects>
+                <viewController id="rWD-NG-0uI" customClass="MotoViewController" customModule="HelloTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dNx-Nt-Jrt"/>
+                        <viewControllerLayoutGuide type="bottom" id="fgh-1G-Xju"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zpq-T3-4xY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Motorcycle-2" translatesAutoresizingMaskIntoConstraints="NO" id="QDK-2B-mPs">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QDK-2B-mPs" firstAttribute="centerY" secondItem="Zpq-T3-4xY" secondAttribute="centerY" id="crG-5z-Duw"/>
+                            <constraint firstItem="QDK-2B-mPs" firstAttribute="centerX" secondItem="Zpq-T3-4xY" secondAttribute="centerX" id="otV-Gh-ln1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Moto" id="OMO-C0-bbU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9S3-VN-09G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="-378"/>
+        </scene>
+        <!--Navio-->
+        <scene sceneID="THz-rk-7CP">
+            <objects>
+                <viewController id="V2U-eW-m29" customClass="NavioViewController" customModule="HelloTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oRc-KG-KZS"/>
+                        <viewControllerLayoutGuide type="bottom" id="TMg-UK-gfO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Edo-uy-Oid">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Viking Ship-2" translatesAutoresizingMaskIntoConstraints="NO" id="zCh-Jx-sB8">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zCh-Jx-sB8" firstAttribute="centerX" secondItem="Edo-uy-Oid" secondAttribute="centerX" id="bpl-MQ-doq"/>
+                            <constraint firstItem="zCh-Jx-sB8" firstAttribute="centerY" secondItem="Edo-uy-Oid" secondAttribute="centerY" id="nqu-aS-YeK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Navio" id="ATL-i4-1e2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vb-Nw-9js" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="275"/>
+        </scene>
+        <!--Barco-->
+        <scene sceneID="2qv-LI-8rt">
+            <objects>
+                <viewController id="xlE-lo-1wK" customClass="BarcoViewController" customModule="HelloTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kxp-oN-R9D"/>
+                        <viewControllerLayoutGuide type="bottom" id="qlD-a7-or0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mVN-be-8Cf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Sail Boat-2" translatesAutoresizingMaskIntoConstraints="NO" id="LiQ-tT-m5x">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LiQ-tT-m5x" firstAttribute="centerY" secondItem="mVN-be-8Cf" secondAttribute="centerY" id="5lP-RI-Vrq"/>
+                            <constraint firstItem="LiQ-tT-m5x" firstAttribute="centerX" secondItem="mVN-be-8Cf" secondAttribute="centerX" id="B6G-FZ-eqY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Barco" id="nrM-7d-bC2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vh2-mN-2pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="-378"/>
+        </scene>
+        <!--Ônibus-->
+        <scene sceneID="1JP-X2-HNO">
+            <objects>
+                <viewController id="9YF-r3-Prs" customClass="OnibusViewController" customModule="HelloTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mKB-pX-sbJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJT-r9-9nV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qfT-Ft-9Gt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Bus-2" translatesAutoresizingMaskIntoConstraints="NO" id="33D-jp-k4H">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="33D-jp-k4H" firstAttribute="centerX" secondItem="qfT-Ft-9Gt" secondAttribute="centerX" id="QEm-3q-BdB"/>
+                            <constraint firstItem="33D-jp-k4H" firstAttribute="centerY" secondItem="qfT-Ft-9Gt" secondAttribute="centerY" id="qT9-I6-xLX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ônibus" id="ZoD-WL-AVL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWd-z1-GR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="275"/>
+        </scene>
+        <!--Trem-->
+        <scene sceneID="wh3-k3-1MW">
+            <objects>
+                <viewController id="Wm7-qA-XLN" customClass="TremViewController" customModule="HelloTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tRw-RQ-oHf"/>
+                        <viewControllerLayoutGuide type="bottom" id="yBA-a7-5bS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d9a-hC-sY1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Train-2" translatesAutoresizingMaskIntoConstraints="NO" id="UAS-rv-ByU">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UAS-rv-ByU" firstAttribute="centerY" secondItem="d9a-hC-sY1" secondAttribute="centerY" id="bB7-gK-HA1"/>
+                            <constraint firstItem="UAS-rv-ByU" firstAttribute="centerX" secondItem="d9a-hC-sY1" secondAttribute="centerX" id="ijI-iw-rhD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trem" id="6p6-yR-G37"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8FA-XM-Qfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="275"/>
+        </scene>
+        <!--Carro-->
+        <scene sceneID="TcK-hH-qwm">
+            <objects>
+                <viewController id="jP7-1j-Ei2" customClass="CarroViewController" customModule="HelloTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HyC-MA-0kF"/>
+                        <viewControllerLayoutGuide type="bottom" id="uZp-eA-Nua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="emJ-lk-VF8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Car-2" translatesAutoresizingMaskIntoConstraints="NO" id="51o-6a-CAq">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="51o-6a-CAq" firstAttribute="centerX" secondItem="emJ-lk-VF8" secondAttribute="centerX" id="Pd0-4N-xXt"/>
+                            <constraint firstItem="51o-6a-CAq" firstAttribute="centerY" secondItem="emJ-lk-VF8" secondAttribute="centerY" id="syq-x1-h13"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Carro" id="rqQ-Kt-mxA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQL-2N-Zfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-378"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="j3O-bV-qlZ">
+            <objects>
+                <tabBarController id="avO-37-dw2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="CMo-Ni-j0l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jP7-1j-Ei2" kind="relationship" relationship="viewControllers" id="1Z7-2t-1gG"/>
+                        <segue destination="rWD-NG-0uI" kind="relationship" relationship="viewControllers" id="QHR-J8-Fbu"/>
+                        <segue destination="xlE-lo-1wK" kind="relationship" relationship="viewControllers" id="mRl-Aq-Iqm"/>
+                        <segue destination="V2U-eW-m29" kind="relationship" relationship="viewControllers" id="emT-rX-rmk"/>
+                        <segue destination="Wm7-qA-XLN" kind="relationship" relationship="viewControllers" id="C4G-Qb-Mv2"/>
+                        <segue destination="9YF-r3-Prs" kind="relationship" relationship="viewControllers" id="UXQ-29-OBJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDx-35-WDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-978" y="-51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-Bus-2" width="100" height="100"/>
+        <image name="icons8-Car-2" width="100" height="100"/>
+        <image name="icons8-Motorcycle-2" width="100" height="100"/>
+        <image name="icons8-Sail Boat-2" width="100" height="100"/>
+        <image name="icons8-Train-2" width="100" height="100"/>
+        <image name="icons8-Viking Ship-2" width="100" height="100"/>
+    </resources>
+</document>

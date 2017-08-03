@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloTableView/PlayerDataSource.swift"
+            timestampString = "523413368.514558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "editar(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloTableView.PlayerDataSource.editar (HelloTableView.PlayerModel) -&gt; ()"
+                  moduleName = "HelloTableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/treinamento/Documents/Curso%20iOS/HelloTableView/HelloTableView/PlayerDataSource.swift"
+                  timestampString = "523414171.46072"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloTableView.PlayerDataSource.editar (HelloTableView.PlayerModel) -&gt; ()"
+                  moduleName = "HelloTableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/treinamento/Documents/Curso%20iOS/HelloTableView/HelloTableView/PlayerDataSource.swift"
+                  timestampString = "523414171.462061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "4040">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
