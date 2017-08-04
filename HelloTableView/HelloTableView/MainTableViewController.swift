@@ -11,6 +11,7 @@ import UIKit
 class MainTableViewController: UITableViewController {
     
     var players : [PlayerModel] = []
+    let dataSource = PlayerDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,8 +81,10 @@ class MainTableViewController: UITableViewController {
         }
         
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Excluir") { (action, indexPath) in
-            PlayerDataSource().excluir(index: indexPath.row)
-            self.atualizarLista()
+            
+            self.dataSource.excluir(playerId: self.players[indexPath.row].id!)
+            self.players.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
         
         editAction.backgroundColor = UIColor.blue
@@ -90,7 +93,7 @@ class MainTableViewController: UITableViewController {
     }
     
     func atualizarLista() {
-        players = PlayerDataSource().listar()
+        players = dataSource.listar()
         tableView.reloadData()
     }
 

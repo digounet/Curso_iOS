@@ -74,8 +74,31 @@ class PlayerDataSource {
         }
     }
     
-    func excluir(index: Int) {
-
+    func excluir(playerId: String) {
+        let entityDescription = NSEntityDescription.entity(forEntityName: TABLE, in: managedContext!)
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
+        
+        fetchRequest.entity = entityDescription
+        fetchRequest.predicate = NSPredicate(format: "\(COLUMN_ID) = %@", playerId)
+        
+        do {
+            
+            let data = try managedContext?.fetch(fetchRequest) as! [NSManagedObject]
+            if let player = data.first {
+                
+                managedContext?.delete(player)
+                
+                do {
+                    try managedContext?.save()
+                } catch let error as NSError {
+                    print("erro na hora de excluir. \(error), \(error.userInfo)")
+                }
+            }
+            
+        } catch {
+            let fetchError = error as NSError
+            print(fetchError)
+        }
     }
     
     func listar() -> [PlayerModel] {
@@ -85,9 +108,11 @@ class PlayerDataSource {
         var playerArray = [NSManagedObject]()
         
         let entityDescription = NSEntityDescription.entity(forEntityName: TABLE, in: managedContext!)
-        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
+        let orderByNome = NSSortDescriptor(key: COLUMN_NOME, ascending: true)
+        
         fetchRequest.entity = entityDescription
+        fetchRequest.sortDescriptors = [orderByNome]
         
         do {
             playerArray = try managedContext!.fetch(fetchRequest) as! [NSManagedObject]

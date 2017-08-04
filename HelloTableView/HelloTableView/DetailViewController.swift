@@ -16,21 +16,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nome: UILabel!
     @IBOutlet weak var funcao: UILabel!
     @IBOutlet weak var posicao: UILabel!
-    @IBOutlet weak var scrool: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        scrool.maximumZoomScale = 1.0
-        scrool.maximumZoomScale = 6.0
-        scrool.delegate = self
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         if let p = player {
             foto.image = UIImage(data: p.foto!)
             nome.text = p.nome
-            posicao.text = String(describing: p.numero!)
+            posicao.text = "#" + String(describing: p.numero!)
             funcao.text = p.funcao
         }
     }
