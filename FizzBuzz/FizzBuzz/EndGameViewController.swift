@@ -52,12 +52,13 @@ class EndGameViewController: BaseViewController {
         let name = edtPlayerName.text
         let photo = imgPlayerPhoto.image
         
-        if ((name == "") && (hasNoPlaceHolder)) {
+        if ((name == "") && (hasNoPlaceHolder)) || ((name != "") && (!hasNoPlaceHolder)) {
             showAlert(title: "Informe o nome e a foto do jogador")
             return
         } else if (name != "") {
             if !PlayerDataSource.shared.save(name: name!, photo: UIImageJPEGRepresentation(photo!, 1)!, score: score) {
                 showAlert(title: "Não foi possível salvar suas informações")
+                return
             }
         }
         

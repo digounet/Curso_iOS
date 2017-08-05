@@ -244,7 +244,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do jogador" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsH-DX-Mpr">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do jogador" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bsH-DX-Mpr">
                                 <rect key="frame" x="16" y="395" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -453,6 +453,6 @@
         <image name="startButton" width="80" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HFp-Zm-UL3"/>
+        <segue reference="QB6-Fg-klo"/>
     </inferredMetricsTieBreakers>
 </document>
