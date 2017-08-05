@@ -17,6 +17,8 @@ class GameViewController: BaseViewController {
     internal var score = 0
     
     private let LIMIT = 100;
+    private let FIZZ_NUMBER = 3
+    private let BUZZ_NUMBER = 5
     
     internal let NUMBER = 1
     internal let FIZZ = 2
@@ -53,11 +55,11 @@ class GameViewController: BaseViewController {
         let tag = (sender as! UIButton).tag
         var requiredTag = tag
         
-        if currentNumber % 15 == 0 {
+        if (currentNumber % BUZZ_NUMBER == 0) && (currentNumber % FIZZ_NUMBER == 0) {
             requiredTag = FIZZ_BUZZ
-        } else if currentNumber % 5 == 0 {
+        } else if currentNumber % BUZZ_NUMBER == 0 {
             requiredTag = BUZZ
-        } else if currentNumber % 3 == 0 {
+        } else if currentNumber % FIZZ_NUMBER == 0 {
             requiredTag = FIZZ
         } else {
             requiredTag = NUMBER

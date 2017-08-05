@@ -1,0 +1,22 @@
+PODS:
+  - SAConfettiView (0.1.8)
+
+DEPENDENCIES:
+  - SAConfettiView (from `https://github.com/gokhanakkurt/SAConfettiView.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  SAConfettiView:
+    :branch: swift3
+    :git: https://github.com/gokhanakkurt/SAConfettiView.git
+
+CHECKOUT OPTIONS:
+  SAConfettiView:
+    :commit: 9035108df456b02589e1bcdb16f178fcae0d31f4
+    :git: https://github.com/gokhanakkurt/SAConfettiView.git
+
+SPEC CHECKSUMS:
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
+
+PODFILE CHECKSUM: 862a055d34f78346a998f44a1e75e0312c420091
+
+COCOAPODS: 1.1.1
