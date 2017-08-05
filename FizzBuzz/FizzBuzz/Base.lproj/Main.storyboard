@@ -295,6 +295,7 @@
                     <connections>
                         <outlet property="edtPlayerName" destination="bsH-DX-Mpr" id="pFf-aS-Eti"/>
                         <outlet property="imgPlayerPhoto" destination="2SL-26-o3k" id="2ri-jJ-epG"/>
+                        <outlet property="imgTitle" destination="VGh-xk-3V8" id="8gg-iN-x9u"/>
                         <outlet property="lblScore" destination="glG-Dv-CHL" id="EAS-r2-8f5"/>
                         <segue destination="zHc-jy-nU0" kind="unwind" identifier="unwindToMenu" unwindAction="unwindToMenuWithSegue:" id="Fwn-oH-Lbf"/>
                         <segue destination="cdV-IB-HxG" kind="show" identifier="showRankingFromEnd" id="QB6-Fg-klo"/>

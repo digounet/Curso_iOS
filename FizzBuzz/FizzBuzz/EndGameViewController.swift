@@ -10,7 +10,7 @@ import UIKit
 
 class EndGameViewController: BaseViewController {
     var score = 0
-    
+    var winner = false
     var gameViewDeletage: GameDelegate?
     
     let imagePicker = UIImagePickerController()
@@ -18,6 +18,7 @@ class EndGameViewController: BaseViewController {
     @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var imgPlayerPhoto: UIImageView!
     @IBOutlet weak var edtPlayerName: UITextField!
+    @IBOutlet weak var imgTitle: UIImageView!
     
     var hasNoPlaceHolder = false
     
@@ -27,6 +28,8 @@ class EndGameViewController: BaseViewController {
         imagePicker.delegate = self
         
         lblScore.text = "\(score) pontos"
+        
+        imgTitle.isHidden = winner
     }
     
     override func didReceiveMemoryWarning() {

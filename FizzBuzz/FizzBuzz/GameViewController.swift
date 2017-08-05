@@ -16,6 +16,8 @@ class GameViewController: BaseViewController {
     internal var currentNumber = 1
     internal var score = 0
     
+    private let LIMIT = 100;
+    
     internal let NUMBER = 1
     internal let FIZZ = 2
     internal let BUZZ = 3
@@ -23,6 +25,7 @@ class GameViewController: BaseViewController {
     
     var time = 0.0
     var timer: Timer?
+    var winner = false
     
     @IBOutlet weak var btnNumber: UIButton!
     
@@ -65,7 +68,11 @@ class GameViewController: BaseViewController {
             
             score = score + currentNumber - pesoPontuacaoTempo
             
-            play()
+            if currentNumber <= LIMIT-1 {
+                play()
+            } else {
+                win()
+            }
         } else {
             gameOver();
         }
@@ -105,14 +112,23 @@ class GameViewController: BaseViewController {
         if segue.identifier == "gameOver" {
             let controller = segue.destination as! EndGameViewController
             
+            controller.winner = winner
             controller.score = score
             controller.gameViewDeletage = self
         }
+    }
+    
+    func win() {
+        winner = true
+        stopTimer()
+        performSegue(withIdentifier: "gameOver", sender: self)
     }
 }
 
 extension GameViewController : GameDelegate {
     func play() {
+        winner = false
+        
         currentNumber = currentNumber + 1
         
         timerProgress.progress = 1.0
