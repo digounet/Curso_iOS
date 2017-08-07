@@ -66,9 +66,9 @@ class GameViewController: BaseViewController {
         }
      
         if tag == requiredTag {
-            let pesoPontuacaoTempo: Int = score * Int(floor(time))
+            let pesoPontuacaoTempo: Int = currentNumber * Int(floor(time))
             
-            score = score + currentNumber - pesoPontuacaoTempo
+            score = score + (10 * currentNumber) - pesoPontuacaoTempo
             
             if currentNumber <= LIMIT-1 {
                 play()
