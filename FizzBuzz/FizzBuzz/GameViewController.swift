@@ -39,6 +39,8 @@ class GameViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        winner = false
+        time = 0
         currentNumber = 0
         score = 0
         
@@ -66,10 +68,6 @@ class GameViewController: BaseViewController {
         }
      
         if tag == requiredTag {
-            let pesoPontuacaoTempo: Int = currentNumber * Int(floor(time))
-            
-            score = score + (10 * currentNumber) - pesoPontuacaoTempo
-            
             if currentNumber <= LIMIT-1 {
                 play()
             } else {
@@ -81,7 +79,6 @@ class GameViewController: BaseViewController {
     }
 
     internal func startTimer() {
-        time = 0
         stopTimer()
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { timer in
@@ -107,6 +104,7 @@ class GameViewController: BaseViewController {
     
     private func gameOver() {
         stopTimer()
+        calcScore();
         performSegue(withIdentifier: "gameOver", sender: self)
     }
     
@@ -123,14 +121,19 @@ class GameViewController: BaseViewController {
     func win() {
         winner = true
         stopTimer()
+        calcScore()
         performSegue(withIdentifier: "gameOver", sender: self)
+    }
+    
+    func calcScore() {
+        let pesoPontuacaoTempo: Int = currentNumber * Int(floor(time))
+        
+        score = (10 * currentNumber) - pesoPontuacaoTempo
     }
 }
 
 extension GameViewController : GameDelegate {
     func play() {
-        winner = false
-        
         currentNumber = currentNumber + 1
         
         timerProgress.progress = 1.0
